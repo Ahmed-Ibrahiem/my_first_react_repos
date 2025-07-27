@@ -1,0 +1,144 @@
+/* Handle Cart Close And Open Style */
+.cart_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -3px 0 5px #eee;
+  transition: 0.3s;
+}
+.cart_closed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -3px 0 5px #eee;
+  transition: 0.3s;
+}
+/* Handle Cart Close And Open Style */
+
+/* Handle Close Cart Button Style */
+.close_cart_btn {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  background-color: orange;
+  color: white;
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  cursor: pointer;
+  box-shadow: -2px 2px 3px #ccc;
+}
+/* Handle Close Cart Button Style */
+
+/* Handle Cart Style */
+.cart {
+  min-width: 300px;
+  padding: 15px;
+}
+
+/* Handle Cart Style */
+
+/* Handle Top Of Cart Style */
+.top_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  > h2 {
+    font-size: 20px;
+    font-weight: 600;
+    > span {
+      color: rgb(244, 179, 0);
+    }
+  }
+}
+/* Handle Top Of Cart Style */
+
+/* Handle Body Of Cart Style */
+.body_cart {
+  height: 615px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+}
+.body_cart::-webkit-scrollbar {
+  width: 5px;
+}
+.body_cart::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > button {
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #888;
+    transition: 0.3s;
+  }
+  > button:hover {
+    color: red;
+    filter: drop-shadow(0 0 3px red);
+  }
+}
+.img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  > img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.item_info {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  > h3 {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    > button {
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      padding: 3px;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}
+/* Handle Body Of Cart Style */
